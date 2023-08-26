@@ -1,0 +1,533 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+#main a,
+nav a,
+#second a,
+#fivth a {
+    text-decoration: none;
+}
+
+
+/*-----css start for navigation-----*/
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 999999;
+}
+
+nav.sticky {
+    background: #f5f7f6;
+    box-shadow: 0px 0px 8px #000000;
+    transition: 0.5s all ease;
+}
+
+.logo {
+    height: 55px;
+    margin-right: -100px;
+}
+
+.logo img {
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: -150px;
+}
+
+.menu a {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    width: 142px;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 0px;
+    border-radius: 10px;
+    margin: 0px 4px;
+}
+
+.menu .active,
+.menu a:hover {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0.5px #f1f1f1;
+    transition: 0.5s all ease;
+    color: rgb(97, 154, 252);
+}
+
+nav .fa-bars {
+    font-size: 1.9rem;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: rgb(70, 139, 255);
+}
+
+#icon {
+    cursor: pointer;
+    display: none;
+    padding: 8px 8px;
+}
+
+
+/*-----css close for navigation-----*/
+
+
+/*-----css open for main section ---*/
+
+#main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imges/front-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+.main-text {
+    width: auto;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.main-text h1 {
+    font-size: 3.6rem;
+    word-spacing: 2px;
+    color: rgb(243, 243, 243);
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.main-text h1 span {
+    color: #181822;
+}
+
+.main-text p {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: rgb(243, 244, 255);
+    word-spacing: 2px;
+}
+
+.main-button button,
+.head-button button {
+    width: 130px;
+    height: 45px;
+    outline: none;
+    border: none;
+    background: #fff;
+    border-radius: 40px;
+    padding: 2px 2px;
+    transition: 2s all ease;
+}
+
+.main-button button a,
+.head-button button a,
+.fiveth-button button {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.main-button button:hover,
+.head-button button:hover,
+.fiveth-button button:hover {
+    transform: scale(1.1);
+    transition: 1.2s all ease;
+}
+
+
+/*-----css close for main section ---*/
+
+
+/*---- css open for second section ---*/
+
+#second {
+    width: 100%;
+    min-height: auto;
+    background-image: url(../imges/about-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.second-section-mall {
+    width: 100%;
+    margin: 140px 0px 120px auto;
+}
+
+.second-text {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.second-text strong {
+    font-weight: 700;
+    font-size: 1.43rem;
+    color: #ffffff;
+    line-height: 35px;
+}
+
+.socail-blog {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    margin-top: 55px;
+}
+
+.blog-1,
+.blog-2,
+.blog-3,
+.blog-4 {
+    width: 260px;
+    height: auto;
+    display: flex;
+    flex-grow: 0.5;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.b-blog {
+    height: 140px;
+    transition: 0.4s all ease;
+}
+
+.b-blog img {
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.b-blog img:hover {
+    transform: scale(1.08);
+    transition: 0.4s all ease;
+}
+
+.head {
+    border-bottom: 1.5px solid #ffffff;
+    padding: 10px 20px;
+}
+
+.head strong {
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.head-text {
+    width: 96%;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+.head-text p {
+    font-weight: 530;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 1rem;
+    word-spacing: 2px;
+    line-height: 20px;
+}
+
+.head-button button {
+    background-color: rgb(64, 164, 231);
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+
+/*---- css close for second section ---*/
+
+
+/*---- css open for therd section ---*/
+
+#therd {
+    width: 100%;
+    min-height: auto;
+    overflow: hidden;
+    background-color: #f5f7f6;
+}
+
+.therd-head {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.therd-head h1 {
+    font-size: 2.5rem;
+}
+
+.therd-head span {
+    width: 50%;
+    height: 4px;
+    margin: 0px auto;
+    margin-top: 30px;
+    border-radius: 4px;
+    display: block;
+    background-color: rgb(64, 164, 231);
+}
+
+.logo-list {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    margin-top: 55px;
+}
+
+.logo-pro {
+    width: 108px;
+    display: flex;
+    flex-grow: 0.2;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 35px 100px;
+    text-align: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo-pro-1 img {
+    width: 60%;
+    object-position: center;
+    object-fit: contain;
+}
+
+.liner span {
+    width: 50%;
+    height: 4px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    display: block;
+    background-color: rgb(64, 164, 231);
+}
+
+.logo-pro:hover {
+    transform: scale(1.09);
+}
+
+
+/*---- css close for therd section ---*/
+
+
+/*---- css openfor forth section ---*/
+
+#forth {
+    width: 100%;
+    height: 75vh;
+    background-image: url(../imges/testimonial-bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slider {
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-a {
+    background-color: rgba(0, 0, 0, 0);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.showbox {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+}
+
+.cs-hidden {
+    overflow: visible !important;
+}
+
+.main-box h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.main-box {
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #f5f7f6;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.down-box strong {
+    font-size: 1rem;
+    font-size: 500;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.down-box p {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+
+/*---- css close for forth section ---*/
+
+
+/*---open css for fivth section ----*/
+
+#fivth {
+    width: 100%;
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #f5f7f6;
+}
+
+.fiveth-head {
+    width: 45%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.fiveth-head h1 {
+    font-size: 2.5rem;
+    color: #181822;
+    margin-bottom: 50px;
+}
+
+.fiveth-head p {
+    font-size: 1.1rem;
+    font-weight: 520;
+    line-height: 22px;
+}
+
+.fiveth-head span {
+    color: rgb(45, 121, 253);
+    font-style: italic;
+    font-weight: 700;
+}
+
+.fiveth-button button {
+    width: 190px;
+    padding: 10px 10px;
+    border-radius: 24px;
+    outline: none;
+    border: none;
+    background-color: rgb(64, 164, 231);
+}
+
+.fiveth-button button a {
+    color: rgb(255, 255, 255);
+}
+
+
+/*---end css for fivth section ----*/
+
+
+/*---start css for footer ----*/
+
+footer {
+    width: 100%;
+    height: 15vh;
+    background-color: #181822;
+    color: #fcfafa;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.05rem;
+}
+
+footer strong a {
+    color: #fcfafa;
+}
+
+
+/*---end css for footer ----*/
+
+
+/*---end css for preloder ----*/
+
+#preloder {
+    background: #e4e4ff url(../imges/ManiYa-Logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 65%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99999999999;
+}
+
+#preloder iframe {
+    display: none;
+}
+
+
+/*---end css for preloder ----*/

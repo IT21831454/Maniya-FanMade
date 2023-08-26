@@ -1,0 +1,104 @@
+/*------start main media @-----*/
+@media(max-width:1200px){
+    .fa-bars{
+        cursor: pointer;
+        background-color: rgb(120, 90, 255);
+    }
+    #icon{
+        display: block;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        top: 100%; left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.993);
+        padding: 10px 6px;
+        border-top: 1px solid rgb(217, 216, 219);
+        transform-origin: bottom;
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    .menu.nav-toggle{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .menu li{
+        margin-top:45px;
+    }
+    .fa-times{
+        transform: rotate(180deg);
+    }
+    .main-text h1{
+        font-size: 2rem;
+    }
+    .main-text p{
+        font-size: 1rem;
+    }
+    #second{
+        background-position-x: 17% ;
+        background-image: url(../imges/about-bg-mobile.png);
+    }
+    .second-text{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: -20px;
+    }
+    .second-text strong{
+        font-size: 1.1rem;
+    }
+    .head strong{
+        font-size: 1.2rem;
+    }
+    .head-text p{
+        font-size: 1rem;
+    }
+    .logo{
+        height: 48px;
+    }
+    .fiveth-head{
+        width: 80%;
+    }
+    #main{
+        background-position-y: bottom;
+    }
+    #preloder{
+        background-size: 65%;
+    }
+}
+@media(max-width:600px){
+    .logo{
+        height: 48px;
+        margin-right: 90px; 
+    }
+    .showbox{
+        width: 100%;
+        padding: 2px 2px;
+    }
+    .showbox h3{
+        font-size: 0.9rem;
+        font-size: 500;
+    }
+    .showbox strong p{
+        font-size: 0.9rem;
+        font-size: 500;
+    }
+    .fiveth-head{
+        width: 94%;
+    }
+    .fiveth-head h1{
+        font-size: 2rem;
+    }
+    .fiveth-head p{
+        font-size: 0.9rem;
+    }
+    .therd-head h1{
+        font-size: 2rem;
+    }
+    .head-text{
+        width: 100%;
+    }
+    .blog-1, .blog-2, .blog-3, .blog-4{
+        width: 100%;
+    }
+}
